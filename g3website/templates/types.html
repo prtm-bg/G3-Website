@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load static %}   
+{% block page_title %}
+{{subject}} | Group 3
+{% endblock %}
+   
+
+
+
+{% block content %}
+
+    <main class="page service-page">
+        <section class="clean-block clean-services dark" style="background: #222831;">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info text-uppercase" style="--bs-primary: vefef;">{{subject}}</h2>
+                    <p><span class="text-capitalize">{{subject}}</span> Study Materials categorized by Types</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" style="background: #2e3239;">
+                            <div class="card-body">
+                                <h4 class="card-title mt-3">Syllabus</h4>
+                                <p class="card-text">. . .</p>
+                            </div>
+                            <div><a class="btn btn-outline-primary btn-sm" role="button" href="/{{subject}}/syllabus" style="width: 56px;height: 35px;margin: 0px 0px 25px;padding: 6px 20px;">→</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" style="background: #2e3239;">
+                            <div class="card-body">
+                                <h4 class="card-title mt-3">Books</h4>
+                                <p class="card-text">. . .</p>
+                            </div>
+                            <div style="--bs-body-bg: #222831;"><a class="btn btn-outline-primary btn-sm" role="button" href="/{{subject}}/books" style="width: 56px;height: 35px;margin: 0px 0px 25px;padding: 6px 20px;">→</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" style="background: #2e3239;">
+                            <div class="card-body">
+                                <h4 class="card-title mt-3">Class Notes</h4>
+                                <p class="card-text">. . .</p>
+                            </div>
+                            <div><a class="btn btn-outline-primary btn-sm" role="button" href="/{{subject}}/notes" style="width: 56px;height: 35px;margin: 0px 0px 25px;padding: 6px 20px;">→</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" style="background: #2e3239;">
+                            <div class="card-body">
+                                <h4 class="card-title mt-3">Google Drive Content</h4>
+                                <p class="card-text">View the Google Drive Content shared by Seniors</p>
+                            </div>
+                            <div><a class="btn btn-outline-primary btn-sm" role="button" href="/{{subject}}/gdrive" style="width: 56px;height: 35px;margin: 0px 0px 25px;padding: 6px 20px;">→</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" style="background: #2e3239;">
+                            <div class="card-body">
+                                <h4 class="card-title mt-3">Previous Year Questions</h4>
+                                <p class="card-text">. . .</p>
+                            </div>
+                            <div><a class="btn btn-outline-primary btn-sm" role="button" href="/{{subject}}/pyq" style="width: 56px;height: 35px;margin: 0px 0px 25px;padding: 6px 20px;">→</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" style="background: #2e3239;">
+                            <div class="card-body">
+                                <h4 class="card-title mt-3">All Materials</h4>
+                                <p class="card-text">View all the Contents (Unsorted)</p>
+                            </div>
+                            <div><a class="btn btn-outline-primary btn-sm" role="button" href="/{{subject}}/all" style="width: 56px;height: 35px;margin: 0px 0px 25px;padding: 6px 20px;">→</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    
+{% endblock %}

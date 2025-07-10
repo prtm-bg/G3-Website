@@ -55,11 +55,27 @@ cover/
 *.mo
 *.pot
 
+
 # Django stuff:
 *.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# VS Code
+.vscode/
+
+# Python virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 # Flask stuff:
 instance/
